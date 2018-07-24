@@ -1,0 +1,141 @@
+body {
+	font-family: Tahoma;
+}
+
+header {
+	padding-top: 77px;
+	padding-bottom: 96px;
+}
+
+.container {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-img {
+	display: inline-block;
+	width: 45%;
+	vertical-align: middle;
+}
+
+.header-text {
+	display: inline-block;
+	width: 54%;
+	vertical-align: middle;
+}
+
+.header-text__title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.header-text__subtitle {
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+.header-text__desc {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	margin-bottom: 47px;
+	max-width: 530px;
+}
+
+.header-text__price {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 27px;
+	margin-bottom: 75px;
+}
+
+button:focus {
+	outline: none;
+}
+
+.button {
+	border-radius: 5px;
+	background-color: #f05a22;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 22px 42px;
+	color: #ffffff;
+	line-height: 27px;
+	border: none;
+	margin-right: 40px;
+}
+
+.button-o {
+	border-radius: 5px;
+	border: 2px solid #f05a22;
+	background-color: transparent;
+	color: #f05a22;
+}
+
+.features {
+	border: 1px solid #ffffff;
+	background-color: #f2f2f2;
+}
+
+.section__title {
+	color: #333333;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 27px;
+	text-align: center;
+	margin-top: 89px;
+	margin-bottom: 90px;
+}
+
+.features-wrap::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.features-block {
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	float: left;
+}
+
+.features-block__img {
+	min-height: 55px;
+	margin-bottom: 15px;
+}
+
+.features-block__text {
+	color: #333333;
+	/*font-family: "Open Sans";*/
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+	margin-bottom: 100px;
+}
+
+.sale-img-wrap::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.sale-img-wrap {
+	margin-bottom: 110px;
+}
+
+.sale-block {
+	display: inline-block;
+	text-align: center;
+	width: 25%;
+	float: left;
+}
+
+.sale-block__img {
+	min-height: 260px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+}
