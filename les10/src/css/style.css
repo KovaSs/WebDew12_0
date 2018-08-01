@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+.header {
+  padding: 15px 0;
+}
+
 .header-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,6 +24,11 @@
   margin-right: 13px;
 }
 
+.header-contacts__phone:first-child {
+  border-right: 1px solid #cfcfd0;
+  padding-right: 13px;
+}
+
 .button {
   font-size: 14px;
   font-weight: 400;
@@ -29,6 +40,11 @@
   border-radius: 4px;
 }
 
+.button:hover {
+  background-color: #ffa71a;
+  cursor: pointer;
+}
+
 .button:active,
 .button:hover,
 .button:focus {
@@ -38,6 +54,69 @@
 
 .button img {
   vertical-align: middle;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+.main {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url("../img/main/main-bg.jpg") center no-repeat;
+  color: #ffffff;
+  z-index: 1;
+  /* Оформление главной картинки */
+  /* Оформление текста */
+}
+
+.main::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.main-img {
+  position: relative;
+}
+
+.main-img::before {
+  content: '';
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  left: 50%;
+  margin-left: -195px;
+  border: 1px solid #fff;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.main-text__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.main-text__subtitle {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 24px;
 }
 
 body {

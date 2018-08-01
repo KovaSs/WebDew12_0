@@ -1,0 +1,42 @@
+.main
+	position: relative // Делаем блок жестким
+	padding-top: 65px
+	padding-bottom: 60px
+	background: #373737 url(../img/main/main-bg.jpg) center no-repeat
+	color: $text-color-light
+	z-index: 1
+	&::before
+		content: ''
+		display: block
+		position: absolute // Заставляем его растягиваться в жестком блоке
+		right: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.6)
+		z-index: 0
+	/* Оформление главной картинки */
+	&-img
+		position: relative
+		&::before
+			content: ''
+			position: absolute // Заставляем его растягиваться в жестком блоке
+			width: 390px
+			height: 390px
+			left: 50%
+			margin-left: -195px
+			border: 1px solid #fff
+			z-index: -1
+			border-radius: 50%
+	/* Оформление текста */
+	&-text
+		&__title
+			font-size: 30px
+			font-weight: 700
+			margin-bottom: 20px
+		&__subtitle
+			font-size: 28px
+			font-weight: 300
+			margin-bottom: 24px
+			
+			
